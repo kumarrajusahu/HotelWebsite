@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 .container .box {
   height: 125px;
@@ -27,6 +27,11 @@ nav .container {
 .dropdown-menu {
   --bs-dropdown-min-width: 15rem;
 }
+
+#fill1 {
+  justify-content: space-between !important;
+}
+
 /* -----phone------------- */
 @media only screen and (max-width: 600px) {
   .desktop-nav {
@@ -66,9 +71,11 @@ nav .container {
   .form-apointment {
     position: relative;
     bottom: 0em !important;
-    height: 310px !important;
     margin-bottom: 13px !important;
-    padding-top: 20px;
+
+    height: 300px !important;
+
+    padding: 10px 0em;
   }
 
   .top {
@@ -82,7 +89,7 @@ nav .container {
 
   .carousel-inner {
     margin: 0px 4px 0px 4px;
-
+    padding: 0px 0.69em;
     position: relative;
     right: 4px;
     width: 100%;
@@ -119,7 +126,6 @@ nav .container {
     /* position: relative !important; */
     /* left: -16px !important; */
     width: 88% !important ;
-
   }
 
   .accordion-button::after {
@@ -136,26 +142,20 @@ nav .container {
     width: 13.5% !important;
   }
 
-
-
-
   form div {
     width: 100% !important;
   }
-  
 
-  footer form{
+  footer form {
     margin-left: 30px;
     height: 249px;
   }
 
-
   .submit {
     position: relative !important;
-    left:7em !important;
-    top:9px !important;
+    left: 7em !important;
+    top: 9px !important;
   }
-
 
   .footer-img ul li img {
     padding: 10px;
@@ -163,26 +163,19 @@ nav .container {
     height: 100% !important;
   }
 
-
-
   footer .footer-img ul li {
     /* list-style-type: none; */
     margin: 10px !important;
-}
+  }
 
-.heading3{
-  padding: 0 14px !important;
+  .heading3 {
+    padding: 0 14px !important;
+  }
 }
-}
-
-
 
 /* @media only screen and (max-width: 400px) and (min-width: 350px){
   {}
 } */
-
-
-
 
 /* -----------pc-------------- */
 @media only screen and (min-width: 992px) {
@@ -220,16 +213,19 @@ nav .container {
     width: 97% !important;
   }
 
-
-
   .submit {
     position: relative;
     left: 7.5em;
     top: 9px !important ;
   }
+
+  /* .col-lg-2 {
+  flex: 0 0 auto;
+  width: 15.666667% !important;
+  } */
 }
 
-/* -------------etra large device-- */
+/* -----media quiry end-------------- */
 
 #remove {
   border: none;
@@ -243,13 +239,14 @@ nav .container {
 .form-apointment {
   background-color: black;
   position: relative;
-  bottom: 3em;
-  width: 97%;
+  bottom: 4.8em;
+  width: 100%;
   border-top: 10px solid #31cec3;
-  height: 100px;
+  height: 76px;
+  margin-bottom: -44px;
 }
 
-.form-apointment {
+/* .form-apointment {
   background-color: black;
   position: relative;
   bottom: 76px;
@@ -257,7 +254,7 @@ nav .container {
   border-top: 10px solid #31cec3;
   height: 76px;
   margin-bottom: -44px;
-}
+} */
 
 .container form .outer {
   background-color: #fff;
@@ -268,7 +265,8 @@ nav .container {
 form div {
   width: 110%;
 }
-
+.resrerve {
+}
 /* -------container------- */
 
 #rooms ul li {
@@ -371,7 +369,7 @@ textarea {
   width: 88%;
   background-color: #6c727f;
   border: 1px solid black;
-  border-radius: 0px;
+  border-radius: 7px !important;
   color: white;
 }
 
@@ -416,9 +414,10 @@ footer .footer-img ul li {
   height: 2em;
   width: 2em;
   border-radius: 50%;
-  position: relative;
-  left: 1224px;
-  bottom: 45px;
+  position: fixed;
+
+  right: 3em;
+  bottom: 27px;
 }
 .container {
   width: unset;
@@ -427,6 +426,6 @@ footer .footer-img ul li {
 body {
   overflow-x: hidden;
 }
-footer{
-  overflow-x:hidden ;
+footer {
+  overflow-x: hidden;
 }
